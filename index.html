@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Search</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <style>
+          
+          #text1 {
+                height: 45px;
+                width : 570px;
+                padding: 10px 15px;
+                margin: 220px 10px 10px 10px;
+                box-sizing: border-box;
+                border: 1px solid gray;
+                border-radius: 40px;
+               
+            }
+            #text2 {
+                height: 45px;
+                width : 570px;
+                padding: 10px 15px;
+                margin: 250px 480px 5px 480px;
+                box-sizing: border-box;
+                border: 1px solid gray;
+                border-radius: 40px    
+               }
+            #text3 {
+                height: 35px;
+                width : 570px;
+                padding: 10px 15px;
+                margin: 10px 700px 5px 5px;
+                box-sizing: border-box;
+                border: 1px solid gray;
+                 
+               }
+          #submit1 {
+                margin: 5px 7px 5px 5px;
+                padding: 5px 10px;
+                border: 1px transparent; 
+                  }
+          #submit2 {
+                margin: 5px 200px 5px 700px;
+                padding: 5px 10px;
+                border: 1px transparent; 
+                  }
+          #submit3 {
+                margin: 5px 200px 5px 700px;
+                padding: 5px 10px;
+                border: 1px transparent;
+                background-color: #2ea8ee;
+                color: white; 
+                  }
+          #link1 {
+
+                margin: 10px 20px 1px 10px;
+                text-align: right;
+               
+            }
+        </style>
+        <script>
+        function show(shown, hidden) {
+          document.getElementById(shown).style.display='block';
+          document.getElementById(hidden).style.display='none';
+       
+          return false;
+        }
+        </script>
+        </head>
+        <body>
+            
+          <div id="Page1">
+            <p id= "link1" >
+                      <a  href="#" onclick=" show('Page2','Page1');">Image Search</a>
+            </p>
+            <p id="link1" >
+                      <a  href="#" onclick=" show('Page3','Page1');">Advanced Search</a>
+            </p>
+            <form action="https://google.com/search" style="text-align: center; ">
+              <p><input id="text1" class="col-10" type="text" name="q" ></p>
+              <p>
+                <input id="submit1" type="submit" value="Google Search" name="btnK">
+                <input id="submit1" type="submit" value="I'm feeling lucky" name="btnI">
+              </p>  
+
+          </div>
+            
+          <div id="Page2" style="display:none">
+            
+            <p id= "link1" >
+              <a href="#" onclick=" show('Page1','Page2');">Back to Google Search</a>
+            </p>
+            <form action="https://google.com/search" style="text-align: center; ">
+              <p><input id="text2" class="col-10" type="text" name="q" ></p>
+              <p>
+                <input id="submit2" type="submit" value="Image search" name="tbm">
+              </p>
+          </div>
+
+          <div id="Page3" style="display:none">
+            
+            <p id= "link1" >
+              <a href="#" onclick=" show('Page1','Page3');">Back to Google Search</a>
+            </p>
+            <form action="https://google.com/search" style="text-align: center; ">
+              <p>&nbsp &nbsp All these words: &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <input id="text3" class="col-10" type="text" name="q" ></p>
+              <p>&nbsp &nbsp This exact word or phrase: &nbsp <input id="text3" class="col-10" type="text" name="q" ></p>
+              <p>&nbsp &nbsp Any of these words:  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp <input id="text3" class="col-10" type="text" name="q" ></p>
+              <p>&nbsp &nbsp None of these words: &nbsp &nbsp &nbsp &nbsp &nbsp<input id="text3" class="col-10" type="text" name="q" ></p>
+              <p>
+                <input id="submit3" type="submit" value="Advanced Search" name="tbm">
+              </p>
+          </div>
+            
+        </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
